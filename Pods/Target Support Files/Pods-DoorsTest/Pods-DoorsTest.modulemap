@@ -1,0 +1,6 @@
+module Pods_DoorsTest {
+  umbrella header "Pods-DoorsTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

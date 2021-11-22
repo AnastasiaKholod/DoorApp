@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		CE095C502749188D008C9F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE095C4F2749188D008C9F91 /* AppDelegate.swift */; };
 		CE095C522749188D008C9F91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE095C512749188D008C9F91 /* SceneDelegate.swift */; };
-		CE095C542749188D008C9F91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE095C532749188D008C9F91 /* ViewController.swift */; };
-		CE095C572749188D008C9F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE095C552749188D008C9F91 /* Main.storyboard */; };
+		CE095C542749188D008C9F91 /* DoorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE095C532749188D008C9F91 /* DoorsViewController.swift */; };
 		CE095C592749188F008C9F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE095C582749188F008C9F91 /* Assets.xcassets */; };
 		CE095C5C2749188F008C9F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE095C5A2749188F008C9F91 /* LaunchScreen.storyboard */; };
 		CE095C672749188F008C9F91 /* DoorsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE095C662749188F008C9F91 /* DoorsTestTests.swift */; };
 		CE095C722749188F008C9F91 /* DoorsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE095C712749188F008C9F91 /* DoorsTestUITests.swift */; };
+		CE095C8027493A51008C9F91 /* DoorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE095C7F27493A51008C9F91 /* DoorCell.swift */; };
+		CE095C8227494EEA008C9F91 /* WelcomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE095C8127494EEA008C9F91 /* WelcomeCell.swift */; };
+		CE095C8427495D03008C9F91 /* DoorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE095C8327495D03008C9F91 /* DoorModel.swift */; };
+		CE095C8627496142008C9F91 /* DoorModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE095C8527496142008C9F91 /* DoorModelItem.swift */; };
+		FC18D3E67E32DA03B1AB265E /* libPods-DoorsTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E60AFCC5B5849CD640466A87 /* libPods-DoorsTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		434A5FD9E4D140A8856F3151 /* Pods-DoorsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorsTest.release.xcconfig"; path = "Target Support Files/Pods-DoorsTest/Pods-DoorsTest.release.xcconfig"; sourceTree = "<group>"; };
+		83F75F967B6AA18F540405BD /* Pods-DoorsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoorsTest.debug.xcconfig"; path = "Target Support Files/Pods-DoorsTest/Pods-DoorsTest.debug.xcconfig"; sourceTree = "<group>"; };
 		CE095C4C2749188D008C9F91 /* DoorsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE095C4F2749188D008C9F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE095C512749188D008C9F91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE095C532749188D008C9F91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE095C562749188D008C9F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE095C532749188D008C9F91 /* DoorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsViewController.swift; sourceTree = "<group>"; };
 		CE095C582749188F008C9F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE095C5B2749188F008C9F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE095C5D2749188F008C9F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		CE095C6D2749188F008C9F91 /* DoorsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE095C712749188F008C9F91 /* DoorsTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsTestUITests.swift; sourceTree = "<group>"; };
 		CE095C732749188F008C9F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE095C7F27493A51008C9F91 /* DoorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorCell.swift; sourceTree = "<group>"; };
+		CE095C8127494EEA008C9F91 /* WelcomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCell.swift; sourceTree = "<group>"; };
+		CE095C8327495D03008C9F91 /* DoorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorModel.swift; sourceTree = "<group>"; };
+		CE095C8527496142008C9F91 /* DoorModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorModelItem.swift; sourceTree = "<group>"; };
+		E60AFCC5B5849CD640466A87 /* libPods-DoorsTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoorsTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC18D3E67E32DA03B1AB265E /* libPods-DoorsTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51406ACD58C61BD8A361DE8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E60AFCC5B5849CD640466A87 /* libPods-DoorsTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ED936834E52A1685ADEF4DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83F75F967B6AA18F540405BD /* Pods-DoorsTest.debug.xcconfig */,
+				434A5FD9E4D140A8856F3151 /* Pods-DoorsTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE095C432749188D008C9F91 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,8 @@
 				CE095C652749188F008C9F91 /* DoorsTestTests */,
 				CE095C702749188F008C9F91 /* DoorsTestUITests */,
 				CE095C4D2749188D008C9F91 /* Products */,
+				9ED936834E52A1685ADEF4DB /* Pods */,
+				51406ACD58C61BD8A361DE8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +129,16 @@
 		CE095C4E2749188D008C9F91 /* DoorsTest */ = {
 			isa = PBXGroup;
 			children = (
-				CE095C4F2749188D008C9F91 /* AppDelegate.swift */,
-				CE095C512749188D008C9F91 /* SceneDelegate.swift */,
-				CE095C532749188D008C9F91 /* ViewController.swift */,
-				CE095C552749188D008C9F91 /* Main.storyboard */,
+				CE095C532749188D008C9F91 /* DoorsViewController.swift */,
+				CE095C8327495D03008C9F91 /* DoorModel.swift */,
+				CE095C8527496142008C9F91 /* DoorModelItem.swift */,
+				CE095C7F27493A51008C9F91 /* DoorCell.swift */,
+				CE095C8127494EEA008C9F91 /* WelcomeCell.swift */,
 				CE095C582749188F008C9F91 /* Assets.xcassets */,
 				CE095C5A2749188F008C9F91 /* LaunchScreen.storyboard */,
 				CE095C5D2749188F008C9F91 /* Info.plist */,
+				CE095C512749188D008C9F91 /* SceneDelegate.swift */,
+				CE095C4F2749188D008C9F91 /* AppDelegate.swift */,
 			);
 			path = DoorsTest;
 			sourceTree = "<group>";
@@ -135,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE095C762749188F008C9F91 /* Build configuration list for PBXNativeTarget "DoorsTest" */;
 			buildPhases = (
+				806007C030C9006E5362F606 /* [CP] Check Pods Manifest.lock */,
 				CE095C482749188D008C9F91 /* Sources */,
 				CE095C492749188D008C9F91 /* Frameworks */,
 				CE095C4A2749188D008C9F91 /* Resources */,
@@ -233,7 +267,6 @@
 			files = (
 				CE095C5C2749188F008C9F91 /* LaunchScreen.storyboard in Resources */,
 				CE095C592749188F008C9F91 /* Assets.xcassets in Resources */,
-				CE095C572749188D008C9F91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +286,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		806007C030C9006E5362F606 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoorsTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE095C482749188D008C9F91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE095C542749188D008C9F91 /* ViewController.swift in Sources */,
+				CE095C542749188D008C9F91 /* DoorsViewController.swift in Sources */,
+				CE095C8027493A51008C9F91 /* DoorCell.swift in Sources */,
+				CE095C8227494EEA008C9F91 /* WelcomeCell.swift in Sources */,
 				CE095C502749188D008C9F91 /* AppDelegate.swift in Sources */,
+				CE095C8427495D03008C9F91 /* DoorModel.swift in Sources */,
+				CE095C8627496142008C9F91 /* DoorModelItem.swift in Sources */,
 				CE095C522749188D008C9F91 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +358,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE095C552749188D008C9F91 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE095C562749188D008C9F91 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE095C5A2749188F008C9F91 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,11 +487,13 @@
 		};
 		CE095C772749188F008C9F91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F75F967B6AA18F540405BD /* Pods-DoorsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WJL4JH57MU;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DoorsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,11 +508,13 @@
 		};
 		CE095C782749188F008C9F91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434A5FD9E4D140A8856F3151 /* Pods-DoorsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WJL4JH57MU;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DoorsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
